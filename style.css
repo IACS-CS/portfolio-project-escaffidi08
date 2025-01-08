@@ -1,15 +1,11 @@
-/* There's some sample CSS here which you can use or nuke as you like */
 
 html {
-  /* Make #id links scroll smoothly */
   scroll-behavior: smooth;
 }
 
 body {
-  /* Change to something you like, but please do customize the font! */
   font-family: Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.4;
-  /* reset default margins */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,14 +13,11 @@ body {
 
 .hero {
   box-sizing: border-box;
-  /* Full screen hero section */
   width: 100%;
   height: 100dvh;
-  /* Center the content vertically and horizontally */
   display: grid;
   place-content: center;
-  /* Custom text and stuff */
-  background: #0033a0;
+  background: #9db8f3;
   color: white;
   font-family: Futura;
   font-weight: bold;
@@ -32,24 +25,104 @@ body {
   text-align: center;
 }
 .hero a {
+  font-size: 50px;
   color: white;
   text-decoration: underline;
-  text-decoration-color: #c6093b;
-}
-
-/* A little "activation" to demonstrate JS is working in the template */
-.hero {
-  transition: background 0.5s;
-}
-.hero.active {
-  background: #c6093b;
+  text-decoration-color: #768ec3;
 }
 
 main {
-  /* Make sure our content can scroll the hero away */
   min-height: 100dvh;
-  max-width: 35em; /* choose a width for text */
-  line-height: 1.8; /* choose a line spacing */
-  font-size: 18px; /* choose a font size */
-  margin: 0 auto; /* center the content */
+  max-width: 35em; 
+  line-height: 1.8; 
+  font-size: 18px; 
+  margin: 0 auto; 
+  text-align: center;
+}
+
+
+.sample-work{
+padding-bottom: 40px;;
+}
+
+
+/* Button help from W3Schools */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #9db8f3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 19px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttons {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #9db8f3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 19px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttons span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 25px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
 }
