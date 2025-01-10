@@ -48,7 +48,6 @@ padding-bottom: 40px;;
 
 /* Button help from W3Schools */
 .button {
-  display: inline-block;
   border-radius: 4px;
   background-color: #9db8f3;
   border: none;
@@ -85,4 +84,89 @@ padding-bottom: 40px;;
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.btn{
+  display: inline-block;
+}
+
+.btn2{
+  display: block;
+  margin-left: 200px;
+}
+
+
+.hero2 {
+   box-sizing: border-box;
+  width: 100%;
+  height: 30dvh;
+  display: grid;
+  place-content: center;
+  background: #9db8f3;
+  color: white;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+}
+
+.contact{
+  box-sizing: border-box;
+  width: 100%;
+  height: 30dvh;
+  display: grid;
+  place-content: center;
+  background: #6c81ae;
+  color: white;
+  font-family: Futura;
+  text-align: center;
+}
+
+.stupid{
+  padding-bottom:50px;
+}
+
+.button1 {
+  border-radius: 4px;
+  background-color: #9db8f3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn3{
+  margin-left: 670px;
 }
