@@ -175,3 +175,16 @@ padding-bottom: 40px;;
 .btn3{
   margin-left: 670px;
 }
+
+.art{
+  align: inline-block;
+background: #7990c1;
+width: 350px;
+height: 300px;
+}
+
+.art2{
+  align: inline-block;
+  width:300px;
+  height:300px;
+}
